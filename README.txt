@@ -2,9 +2,10 @@ Hello and welcome to my coding prototype on Ruby on Rails.
 
 The following code following MVC conventions and the CRUD (Create Read Update Destroy) methodology for two related databases - journal entry titles and the entries themselves.
 
-To intialize the code, run "bin/rails server" from the ~/blog directory, and type in localhost:3000 on your internet browser. To edit or destroy an entry, the username authentication is "admin" with password "intern".
+To intialize the code, first enter the ~/blog directory
+Then, run "bin/rails db:migrate RAILS_ENV=development" to import the environment before running "bin/rails server". You can now type in localhost:3000 on your internet browser. To create, edit or destroy an entry, the username authentication is "admin" with password "intern".
 
-Regrettably I was unable to merge my Devise and CanCanCan authentication syntax with this framework in the time constraints of finals and moving out week.
+A bonus feature includes Exception Handling Style that you will see if you attempt to enter a title less than 5 words long, or a blank title. Regrettably I was unable to merge my Devise and CanCanCan authentication syntax with this framework in the time constraints of finals and moving out week.
 
 Thanks for your time!
 
